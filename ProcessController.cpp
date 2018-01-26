@@ -84,7 +84,7 @@ ProcessController& ProcessController::processWordFiles() {
 ProcessController& ProcessController::saveSummary(const FileProcessor &f1, const FileProcessor &f2, const FileProcessor &f3) {
 
   //theResultFile is filename where you store your summary in assignment root folder...
-  const char* theResultFile = "results.txt";
+  const char* theResultFile = "/output/results/results.txt";
   // ----------------------------------------------------------
   // STUDENTS... Add code here to generate and save summary...
   // ----------------------------------------------------------
