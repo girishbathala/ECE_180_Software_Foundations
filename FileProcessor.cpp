@@ -114,7 +114,7 @@ void FileProcessor::saveBigramLikelihood()
 
 	
 
-	bigramOpFile.open(rootPath + std::string("/bigrams_") + tokens[0] + std::string(".json"));
+	bigramOpFile.open(rootPath + std::string("/output/bigrams/bigrams_") + tokens[0] + std::string(".json"));
 
 	bigramOpFile << "{" << std::endl;
 	double probability;
@@ -228,7 +228,7 @@ void FileProcessor::fileTokenizer(std::string& fullPath) {
 	// Create an output filename by appending 'output_' to the input file name
 	// Generate an output file stream handle for a file and redirect the cout buffer to it's read buffer
 
-	std::string opFilename = rootPath + std::string("/output_") + this->filename;
+	std::string opFilename = rootPath + std::string("output/unique_words/output_") + this->filename;
 	std::ofstream resultout(opFilename);
 	std::streambuf *coutbuf = std::cout.rdbuf();
 	std::cout.rdbuf(resultout.rdbuf()); 
