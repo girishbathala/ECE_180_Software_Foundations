@@ -1,0 +1,1 @@
+Distance AB: 42.5037 Distance AC: 49.9858 Document A is most similar to document B

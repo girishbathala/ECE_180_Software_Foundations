@@ -1,0 +1,6 @@
+{
+	{"bigram" : "brown-fox", "probability" : 0.285714},
+	{"bigram" : "fox-the", "probability" : 0.142857},
+	{"bigram" : "quick-brown", "probability" : 0.285714},
+	{"bigram" : "the-quick", "probability" : 0.285714},
+}

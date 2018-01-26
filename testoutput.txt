@@ -1,0 +1,27 @@
+running tests...
+
+Processing File : test1.txt
+The total number of bigrams are 7
+The total number of unique words are : 4
+The total number of unique Bi-grams are : 4
+
+--------------------
+Processing File : test2.txt
+The total number of bigrams are 7
+The total number of unique words are : 4
+The total number of unique Bi-grams are : 4
+
+--------------------
+Distance between identical files test1.txt and test2.txt is : InnerProduct between the files are : 16
+Absolute value of file A : 4
+Absolute value of file B : 4
+0
+
+--------------------
+Processing File : test3.txt
+The total number of bigrams are 8
+The total number of unique words are : 1
+The total number of unique Bi-grams are : 1
+This file test3.txt should have 1 unique word and one unique bi-gram
+
+--------------------

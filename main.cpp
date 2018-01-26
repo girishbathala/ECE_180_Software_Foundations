@@ -1,29 +1,20 @@
-#include<iostream>
-#include<string.h>
+//
+//  main.cpp
+//  ece180-assignment1
+//
+//  Created by rick gessner on 1/10/18.
+//
 
-using namespace std;
+#include "ProcessController.hpp"
+#include <iostream>
 
-int doSomething(int anArg1) {
-	cout<<"In doSomething"<<endl;
-	cout<<"anArg1 is "<<anArg1<<endl;
+int main(int argc, const char * argv[]) {
+  
+    //STUDENTS: Set this variable to the project path of the root of your local assignment folder...
+  const char *theProjectPath ="./";
 
-	int theInt = 10;
-
-
-	cout<<"Here"<<endl;
-      	if(theInt=anArg1) {
-  	  char* theStr = (char *)malloc(100*sizeof(char));
-	  strcpy(theStr, "Wow, they matched!");
-	  return 10;
-      	}
-      	if(!theInt) {
-	  return anArg1;
-	}
-      	return 0;
-}
-
-int main() {
-	cout<<"Hello World, in Main"<<endl;
-	doSomething(0);
-      	return 0;
+  ProcessController theController(theProjectPath);
+  theController.runTests().runActual();
+  
+  return 0;
 }
