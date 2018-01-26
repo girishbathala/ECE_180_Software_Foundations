@@ -17,7 +17,7 @@ ProcessController::ProcessController(const char *aRootPath) : rootPath(aRootPath
  */
 ProcessController& ProcessController::runTests() {
 
-  std::ofstream testout(rootPath+std::string("/testoutput.txt"));
+  std::ofstream testout(rootPath+std::string("output/tests/testoutput.txt"));
   std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
   std::cout.rdbuf(testout.rdbuf()); //redirect
 
